@@ -3,26 +3,37 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8" />
-		<title>Passive Income Hub | AI Solutions</title>
+		<title>Passive Income Hub | Premium AI Solutions</title>
 	</head>
-	<body class="bg-gray-900 text-white p-10">
-		<header class="text-center">
-			<h1 class="text-5xl font-extrabold text-blue-400">Passive Income Hub</h1>
-			<p class="text-xl mt-4">Automated digital assets for micro-niches, templates, and managed sites.</p>
-		</header>
-		<section class="mt-12 grid grid-cols-1 md:grid-cols-3 gap-6">
-			<div class="p-6 bg-gray-800 rounded-lg">
-				<h2 class="text-2xl font-bold">Niche Sites</h2>
-				<p class="mt-2">Automated keyword research and content deployment.</p>
+	<body class="bg-gray-50 text-gray-900 font-sans">
+		<nav class="bg-white shadow-sm p-6 flex justify-between items-center">
+			<h1 class="text-2xl font-black text-blue-600">PI-HUB</h1>
+			<div class="space-x-6 text-sm font-semibold">
+				<a href="#" class="hover:text-blue-600">Services</a>
+				<a href="#" class="hover:text-blue-600">Contact</a>
 			</div>
-			<div class="p-6 bg-gray-800 rounded-lg">
-				<h2 class="text-2xl font-bold">Templates</h2>
-				<p class="mt-2">Professional Tailwind/Astro designs ready to sell.</p>
-			</div>
-			<div class="p-6 bg-gray-800 rounded-lg">
-				<h2 class="text-2xl font-bold">WaaS</h2>
-				<p class="mt-2">Managed website solutions for your business.</p>
-			</div>
-		</section>
+		</nav>
+
+		<main class="max-w-6xl mx-auto px-6 py-16">
+			<section class="text-center">
+				<span class="text-blue-600 font-bold tracking-widest uppercase text-sm">Automated Digital Asset Agency</span>
+				<h1 class="text-6xl font-extrabold mt-4 leading-tight">Scale Your Income with<br/>AI-Driven Digital Infrastructure</h1>
+				<p class="text-xl text-gray-600 mt-6 max-w-2xl mx-auto">We architect micro-niche sites, custom web templates, and managed WaaS solutions—entirely powered by automation.</p>
+				<button class="bg-blue-600 text-white px-8 py-4 rounded-lg mt-8 font-bold hover:bg-blue-700 transition">Get Started</button>
+			</section>
+
+			<section class="mt-24 grid grid-cols-1 md:grid-cols-3 gap-8">
+				{[
+                    { title: "Niche Site Factory", desc: "Automated SEO research, content generation, and deployment for high-conversion niche sites." },
+                    { title: "Template Marketplace", desc: "High-end, performance-optimized Astro/Tailwind templates designed to scale." },
+                    { title: "Managed WaaS", desc: "Professional web presence for local businesses with hands-off monthly maintenance." }
+                ].map(s => (
+                    <div class="bg-white p-8 rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl transition">
+                        <h3 class="text-2xl font-bold">{s.title}</h3>
+                        <p class="text-gray-600 mt-4">{s.desc}</p>
+                    </div>
+                ))}
+			</section>
+		</main>
 	</body>
 </html>
