@@ -1,45 +1,59 @@
 ---
 ---
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 	<head>
 		<meta charset="utf-8" />
-		<title>PI-HUB | AI-Powered Passive Income Infrastructure</title>
+		<title>PI-HUB | Premium AI-Powered Passive Income Infrastructure</title>
 	</head>
-	<body class="bg-slate-950 text-slate-100 font-sans">
-		<nav class="max-w-7xl mx-auto p-6 flex justify-between items-center border-b border-slate-800">
-			<h1 class="text-3xl font-black text-blue-500">PI-HUB</h1>
-			<a href="#contact" class="bg-blue-600 px-6 py-2 rounded-full font-bold hover:bg-blue-700">Get Started</a>
+	<body class="bg-slate-950 text-slate-100 font-sans antialiased">
+		<nav class="sticky top-0 z-50 bg-slate-950/80 backdrop-blur-md border-b border-slate-800 p-6">
+            <div class="max-w-7xl mx-auto flex justify-between items-center">
+                <h1 class="text-3xl font-black bg-gradient-to-r from-blue-400 to-indigo-600 bg-clip-text text-transparent">PI-HUB</h1>
+                <div class="space-x-8 text-sm font-medium text-slate-300">
+                    <a href="#services" class="hover:text-blue-400 transition">Services</a>
+                    <a href="#contact" class="bg-blue-600 px-6 py-2 rounded-full text-white font-bold hover:bg-blue-700 transition">Get Started</a>
+                </div>
+            </div>
 		</nav>
 
 		<main class="max-w-7xl mx-auto px-6 py-20">
 			<section class="text-center">
-				<h2 class="text-6xl font-extrabold leading-tight">Scale Your Digital Income with <br/> <span class="text-blue-500">Automated Web Assets</span></h2>
-				<p class="text-xl text-slate-400 mt-8 max-w-2xl mx-auto">From micro-niche sites to premium templates and managed WaaS—we build, manage, and scale your digital portfolio while you sleep.</p>
+				<div class="inline-flex items-center rounded-full bg-blue-900/30 px-3 py-1 text-sm font-semibold text-blue-400 mb-6">
+                    🚀 Now Accepting Founding Partners
+                </div>
+				<h2 class="text-7xl font-extrabold tracking-tighter leading-[1.1]">Build Your Passive Empire<br/> with <span class="text-blue-500">AI Automation.</span></h2>
+				<p class="text-2xl text-slate-400 mt-8 max-w-2xl mx-auto">We architect micro-niche sites, premium templates, and managed web-as-a-service solutions, entirely powered by AI-driven automation.</p>
+                <div class="mt-12 flex justify-center gap-4">
+                    <a href="#contact" class="bg-blue-600 px-10 py-4 rounded-xl text-xl font-bold hover:bg-blue-700 transition">Launch Your Site</a>
+                    <a href="#services" class="bg-slate-800 px-10 py-4 rounded-xl text-xl font-bold hover:bg-slate-700 transition">View Our Tech</a>
+                </div>
 			</section>
 
-			<section class="mt-24 grid grid-cols-1 md:grid-cols-3 gap-8">
-				<div class="bg-slate-900 p-8 rounded-3xl border border-slate-800">
-					<h3 class="text-2xl font-bold mb-4">🚀 Niche Site Factory</h3>
-					<p class="text-slate-400">Automated SEO research, content generation, and deployment of high-performing micro-sites.</p>
-				</div>
-				<div class="bg-slate-900 p-8 rounded-3xl border border-slate-800">
-					<h3 class="text-2xl font-bold mb-4">🎨 Template Marketplace</h3>
-					<p class="text-slate-400">High-end, performance-optimized Astro/Tailwind templates crafted for developers and agencies.</p>
-				</div>
-				<div class="bg-slate-900 p-8 rounded-3xl border border-slate-800">
-					<h3 class="text-2xl font-bold mb-4">🌐 Managed WaaS</h3>
-					<p class="text-slate-400">Professional, hands-off website solutions for your small business clients with monthly hosting and SEO.</p>
-				</div>
+			<section id="services" class="mt-32 grid grid-cols-1 md:grid-cols-3 gap-8">
+				{[
+                    { title: "🚀 Niche Site Factory", desc: "Automated keyword research, content generation, and deployment for high-conversion niche sites." },
+                    { title: "🎨 Template Marketplace", desc: "High-end, performance-optimized Astro/Tailwind templates crafted for developers." },
+                    { title: "🌐 Managed WaaS", desc: "Professional web presence for local businesses with hands-off monthly maintenance." }
+                ].map(s => (
+                    <div class="group bg-slate-900 p-10 rounded-3xl border border-slate-800 hover:border-blue-500 transition-all duration-300 shadow-2xl hover:-translate-y-2">
+                        <h3 class="text-3xl font-extrabold mb-6 group-hover:text-blue-400 transition">{s.title}</h3>
+                        <p class="text-slate-400 text-lg leading-relaxed">{s.desc}</p>
+                    </div>
+                ))}
 			</section>
             
-            <section id="contact" class="mt-24 bg-blue-900 p-12 rounded-3xl text-center">
-                <h3 class="text-3xl font-bold">Ready to Start?</h3>
-                <p class="text-blue-100 mt-4">Let's discuss how PI-HUB can automate your next revenue stream.</p>
-                <form class="mt-8 flex justify-center gap-4">
-                    <input type="email" placeholder="Enter your email" class="px-6 py-3 rounded-full text-slate-900" />
-                    <button class="bg-white text-blue-900 px-8 py-3 rounded-full font-bold">Request Consultation</button>
+            <section id="contact" class="mt-32 bg-gradient-to-r from-blue-900 to-indigo-900 p-16 rounded-[3rem] text-center shadow-2xl">
+                <h3 class="text-5xl font-extrabold">Ready to automate your income?</h3>
+                <p class="text-blue-100 mt-6 text-xl">Let's discuss how PI-HUB can engineer your next revenue stream.</p>
+                <form class="mt-12 flex justify-center gap-4 max-w-xl mx-auto">
+                    <input type="email" placeholder="Enter your work email" class="flex-grow px-8 py-4 rounded-xl text-slate-900 text-lg focus:outline-none" />
+                    <button class="bg-white text-blue-900 px-10 py-4 rounded-xl font-bold text-lg hover:bg-slate-200 transition">Start Free Consultation</button>
                 </form>
             </section>
 		</main>
+        
+        <footer class="text-center py-16 text-slate-500 border-t border-slate-900">
+            <p>&copy; 2026 PI-HUB. Built by Isuru Munasinghe.</p>
+        </footer>
 	</body>
 </html>
