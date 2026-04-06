@@ -2,25 +2,20 @@
 import Layout from '../layouts/Layout.astro';
 ---
 <Layout title="Professional Web Solutions">
-    <main>
-        <section style="text-align: center; margin-bottom: 8rem;">
-            <h2 style="font-size: 4.5rem; font-weight: 800; letter-spacing: -0.05em; line-height: 1.1; color: #fff;">Professional Digital Infrastructure.</h2>
-            <p style="font-size: 1.5rem; color: #94a3b8; margin-top: 2rem; max-width: 800px; margin-left: auto; margin-right: auto;">High-performance web engineering for Local Trades, Professional Consulting, and Automotive services.</p>
+    <main class="max-w-7xl mx-auto px-6 py-24">
+        <section class="text-center mb-32">
+            <h1 class="text-7xl md:text-8xl font-black tracking-tighter leading-tight bg-gradient-to-b from-white to-slate-400 bg-clip-text text-transparent">Premium Digital Infrastructure.</h1>
+            <p class="text-2xl text-slate-400 mt-8 max-w-3xl mx-auto">High-performance engineering for ambitious businesses.</p>
         </section>
 
-        <section id="services" class="grid">
-            <a href="/niche-web-assets" class="service-card">
-                <h3 style="font-size: 1.5rem; font-weight: 700; margin-bottom: 1.5rem;">Niche Web Assets</h3>
-                <p style="color: #94a3b8; font-size: 1.125rem;">Engineered properties for specialized industries.</p>
-            </a>
-            <a href="/custom-web-design" class="service-card">
-                <h3 style="font-size: 1.5rem; font-weight: 700; margin-bottom: 1.5rem;">Custom Web Design</h3>
-                <p style="color: #94a3b8; font-size: 1.125rem;">Bespoke brand identities built for high performance.</p>
-            </a>
-            <a href="/managed-web-services" class="service-card">
-                <h3 style="font-size: 1.5rem; font-weight: 700; margin-bottom: 1.5rem;">Managed Web Services</h3>
-                <p style="color: #94a3b8; font-size: 1.125rem;">End-to-end oversight of your digital infrastructure.</p>
-            </a>
+        <section id="services" class="grid md:grid-cols-3 gap-8">
+            {['Niche Web Assets', 'Custom Web Design', 'Managed Web Services'].map(service => (
+                <a href={`/${service.toLowerCase().replace(/ /g, '-')}`} class="group relative bg-slate-900 border border-slate-800 rounded-3xl p-10 hover:border-blue-600 transition-all duration-300 overflow-hidden">
+                    <div class="absolute inset-0 bg-blue-600 opacity-0 group-hover:opacity-10 transition duration-300"></div>
+                    <h3 class="text-2xl font-bold mb-4">{service}</h3>
+                    <p class="text-slate-400 text-lg">Click to view service details and design concepts.</p>
+                </a>
+            ))}
         </section>
     </main>
 </Layout>
