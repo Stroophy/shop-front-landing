@@ -3,39 +3,35 @@ import '../styles/global.css';
 ---
 <html lang="en" class="scroll-smooth">
     <head><meta charset="utf-8" /><title>PI-HUB | Professional Web Solutions</title></head>
-    <body class="bg-white text-slate-900 font-sans antialiased">
-        <header class="p-8 border-b border-slate-200">
+    <body class="bg-slate-950 text-slate-100 font-sans antialiased">
+        <header class="border-b border-slate-800 p-8">
             <nav class="max-w-7xl mx-auto flex justify-between items-center">
-                <h1 class="text-3xl font-black text-slate-900 tracking-tighter">PI-HUB</h1>
-                <div class="space-x-8 text-sm font-bold text-slate-600">
-                    <a href="#services" class="hover:text-blue-600">Services</a>
-                    <a href="#contact" class="bg-slate-900 text-white px-6 py-2 rounded-full hover:bg-slate-800">Get Started</a>
+                <h1 class="text-3xl font-black text-white">PI-HUB</h1>
+                <div class="space-x-8 text-sm font-bold text-slate-400">
+                    <a href="#services" class="hover:text-white">Services</a>
+                    <a href="#contact" class="bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700">Get Started</a>
                 </div>
             </nav>
         </header>
 
         <main class="max-w-7xl mx-auto px-6 py-24">
             <section class="text-center mb-32">
-                <h2 class="text-7xl font-extrabold tracking-tighter leading-tight">High-Performance Digital Assets<br/> for Modern Businesses.</h2>
-                <p class="text-2xl text-slate-500 mt-8 max-w-3xl mx-auto">We architect, design, and manage professional websites that convert visitors into loyal clients. No fluff, just results.</p>
+                <h2 class="text-7xl font-extrabold tracking-tighter leading-tight">Professional Digital Infrastructure for Growing Businesses.</h2>
+                <p class="text-2xl text-slate-400 mt-8 max-w-3xl mx-auto">We provide comprehensive web engineering services, from initial market-fit strategy to continuous performance management. Our focus is delivering reliable, high-converting digital assets.</p>
             </section>
 
-            <section id="services" class="grid grid-cols-1 md:grid-cols-3 gap-12 mb-32">
-                <a href="/niche-web-assets" class="p-8 rounded-2xl bg-slate-50 border border-slate-200 hover:shadow-xl transition">
-                    <h3 class="text-2xl font-bold mb-4">Niche Web Assets</h3>
-                    <p class="text-slate-600 mb-6">High-conversion sites engineered for specific local trades, consulting firms, and vehicle repair businesses.</p>
-                    <span class="text-blue-600 font-bold">View Detail →</span>
-                </a>
-                <a href="/custom-web-design" class="p-8 rounded-2xl bg-slate-50 border border-slate-200 hover:shadow-xl transition">
-                    <h3 class="text-2xl font-bold mb-4">Custom Web Design</h3>
-                    <p class="text-slate-600 mb-6">Bespoke design experiences tailored to your brand identity. Built for speed, security, and impact.</p>
-                    <span class="text-blue-600 font-bold">View Detail →</span>
-                </a>
-                <a href="/managed-web-services" class="p-8 rounded-2xl bg-slate-50 border border-slate-200 hover:shadow-xl transition">
-                    <h3 class="text-2xl font-bold mb-4">Managed Web Services</h3>
-                    <p class="text-slate-600 mb-6">Comprehensive oversight of your digital presence. Hosting, security, updates, and performance monitoring.</p>
-                    <span class="text-blue-600 font-bold">View Detail →</span>
-                </a>
+            <section id="services" class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                {[
+                    { title: "Niche Web Assets", desc: "We design industry-specific digital properties. Through rigorous market analysis, we create assets that dominate local search and drive high-intent leads for local trades, consultancies, and specialized repair shops." },
+                    { title: "Custom Web Design", desc: "Your brand deserves a bespoke interface. We craft high-performance, accessible, and stunningly modern websites engineered to reflect your firm's professional excellence and authority." },
+                    { title: "Managed Web Services", desc: "Maintenance is the foundation of digital longevity. We provide end-to-end oversight—managing your hosting infrastructure, security posture, and performance metrics so your site remains an asset, not a liability." }
+                ].map(s => (
+                    <div class="bg-slate-900 border border-slate-800 p-10 rounded-3xl hover:border-slate-600 transition">
+                        <h3 class="text-2xl font-bold mb-6">{s.title}</h3>
+                        <p class="text-slate-400 text-lg leading-relaxed mb-8">{s.desc}</p>
+                        <a href={"/" + s.title.toLowerCase().replace(/ /g, '-')} class="text-blue-400 font-bold">View Full Service Scope →</a>
+                    </div>
+                ))}
             </section>
         </main>
     </body>
