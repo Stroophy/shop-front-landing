@@ -2,23 +2,29 @@
 import Layout from '../layouts/Layout.astro';
 ---
 <Layout title="Professional Web Solutions">
+    <style is:global>
+        body { background-color: #020617 !important; color: #f1f5f9 !important; }
+        .bg-slate-900 { background-color: #0f172a !important; }
+        .text-slate-950 { color: #020617 !important; }
+        .text-slate-400 { color: #94a3b8 !important; }
+    </style>
     <main class="max-w-7xl mx-auto px-6 py-24">
         <section class="text-center mb-32">
-            <h2 class="text-7xl font-extrabold tracking-tighter leading-tight">Professional Digital Infrastructure.</h2>
+            <h2 class="text-7xl font-extrabold tracking-tighter leading-tight text-white">Professional Digital Infrastructure.</h2>
             <p class="text-2xl text-slate-400 mt-8 max-w-3xl mx-auto">High-performance web engineering for Local Trades, Professional Consulting, and Automotive services.</p>
         </section>
 
         <section id="services" class="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <a href="/niche-web-assets" class="bg-slate-900 border border-slate-800 p-10 rounded-3xl hover:border-slate-600 transition">
-                <h3 class="text-2xl font-bold mb-6">Niche Web Assets</h3>
+            <a href="/niche-web-assets" class="bg-slate-900 border border-slate-700 p-10 rounded-3xl hover:border-slate-500 transition">
+                <h3 class="text-2xl font-bold mb-6 text-white">Niche Web Assets</h3>
                 <p class="text-slate-400 text-lg leading-relaxed">Engineered properties for specialized industries.</p>
             </a>
-            <a href="/custom-web-design" class="bg-slate-900 border border-slate-800 p-10 rounded-3xl hover:border-slate-600 transition">
-                <h3 class="text-2xl font-bold mb-6">Custom Web Design</h3>
+            <a href="/custom-web-design" class="bg-slate-900 border border-slate-700 p-10 rounded-3xl hover:border-slate-500 transition">
+                <h3 class="text-2xl font-bold mb-6 text-white">Custom Web Design</h3>
                 <p class="text-slate-400 text-lg leading-relaxed">Bespoke brand identities built for high performance.</p>
             </a>
-            <a href="/managed-web-services" class="bg-slate-900 border border-slate-800 p-10 rounded-3xl hover:border-slate-600 transition">
-                <h3 class="text-2xl font-bold mb-6">Managed Web Services</h3>
+            <a href="/managed-web-services" class="bg-slate-900 border border-slate-700 p-10 rounded-3xl hover:border-slate-500 transition">
+                <h3 class="text-2xl font-bold mb-6 text-white">Managed Web Services</h3>
                 <p class="text-slate-400 text-lg leading-relaxed">End-to-end oversight of your digital infrastructure.</p>
             </a>
         </section>
