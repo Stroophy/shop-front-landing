@@ -21,37 +21,22 @@ import '../styles/global.css';
 			<section class="text-center">
 				<h2 class="text-7xl font-extrabold tracking-tighter leading-[1.1]">Elevate Your Digital Presence.</h2>
 				<p class="text-2xl text-slate-400 mt-8 max-w-2xl mx-auto">High-performance web solutions for modern businesses. We design, build, and maintain digital assets that drive results.</p>
-                <div class="mt-12 flex justify-center gap-4">
-                    <a href="#contact" class="bg-blue-600 px-10 py-4 rounded-xl text-xl font-bold hover:bg-blue-700 transition">Inquire Now</a>
-                    <a href="#services" class="bg-slate-800 px-10 py-4 rounded-xl text-xl font-bold hover:bg-slate-700 transition">View Services</a>
-                </div>
 			</section>
 
 			<section id="services" class="mt-32 grid grid-cols-1 md:grid-cols-3 gap-8">
-				{[
-                    { title: "Niche Web Assets", desc: "Targeted, high-conversion websites optimized for specific industries and market segments." },
-                    { title: "Custom Web Design", desc: "Bespoke, performance-optimized website templates tailored to your specific brand identity." },
-                    { title: "Managed Web Services", desc: "Reliable, hands-off website management including hosting, maintenance, and performance monitoring." }
-                ].map(s => (
-                    <div class="group bg-slate-900 p-10 rounded-3xl border border-slate-800 hover:border-slate-600 transition-all duration-300 shadow-2xl">
-                        <h3 class="text-3xl font-extrabold mb-6 text-white">{s.title}</h3>
-                        <p class="text-slate-400 text-lg leading-relaxed">{s.desc}</p>
-                    </div>
-                ))}
+				<a href="/niche-web-assets" class="group bg-slate-900 p-10 rounded-3xl border border-slate-800 hover:border-blue-500 transition-all duration-300 shadow-2xl block">
+					<h3 class="text-3xl font-extrabold mb-6 text-white group-hover:text-blue-400 transition">Niche Web Assets</h3>
+					<p class="text-slate-400 text-lg leading-relaxed">Targeted, high-conversion websites optimized for specific industries and market segments.</p>
+				</a>
+				<a href="/custom-web-design" class="group bg-slate-900 p-10 rounded-3xl border border-slate-800 hover:border-blue-500 transition-all duration-300 shadow-2xl block">
+					<h3 class="text-3xl font-extrabold mb-6 text-white group-hover:text-blue-400 transition">Custom Web Design</h3>
+					<p class="text-slate-400 text-lg leading-relaxed">Bespoke, performance-optimized website templates tailored to your specific brand identity.</p>
+				</a>
+				<a href="/managed-web-services" class="group bg-slate-900 p-10 rounded-3xl border border-slate-800 hover:border-blue-500 transition-all duration-300 shadow-2xl block">
+					<h3 class="text-3xl font-extrabold mb-6 text-white group-hover:text-blue-400 transition">Managed Web Services</h3>
+					<p class="text-slate-400 text-lg leading-relaxed">Reliable, hands-off website management including hosting, maintenance, and performance monitoring.</p>
+				</a>
 			</section>
-            
-            <section id="contact" class="mt-32 bg-slate-900 p-16 rounded-[3rem] text-center shadow-2xl border border-slate-800">
-                <h3 class="text-5xl font-extrabold">Let's build your project.</h3>
-                <p class="text-slate-400 mt-6 text-xl">Get in touch to discuss your business requirements.</p>
-                <form class="mt-12 flex justify-center gap-4 max-w-xl mx-auto">
-                    <input type="email" placeholder="Enter your business email" class="flex-grow px-8 py-4 rounded-xl text-slate-900 text-lg focus:outline-none" />
-                    <button class="bg-blue-600 text-white px-10 py-4 rounded-xl font-bold text-lg hover:bg-blue-700 transition">Send Inquiry</button>
-                </form>
-            </section>
 		</main>
-        
-        <footer class="text-center py-16 text-slate-600 border-t border-slate-900">
-            <p>&copy; 2026 PI-HUB. All rights reserved.</p>
-        </footer>
 	</body>
 </html>
