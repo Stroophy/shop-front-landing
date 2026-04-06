@@ -8,7 +8,8 @@ const { title } = Astro.props;
         <title>{title} | PI-HUB Web Solutions</title>
         <style>
             .graffiti-bg {
-                background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'%3E%3Cpath fill='%23ffffff' fill-opacity='0.03' d='M20 20l10 10m-10 10l10-10m10 20l10 10m-10 10l10-10M60 60l10 10m-10 10l10-10m10 20l10 10m-10 10l10-10M100 100l10 10m-10 10l10-10M140 140l10 10m-10 10l10-10'%3E%3C/path%3E%3C/svg%3E");
+                /* Increased opacity from 0.03 to 0.08 */
+                background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'%3E%3Cpath fill='%23ffffff' fill-opacity='0.08' d='M20 20l10 10m-10 10l10-10m10 20l10 10m-10 10l10-10M60 60l10 10m-10 10l10-10m10 20l10 10m-10 10l10-10M100 100l10 10m-10 10l10-10M140 140l10 10m-10 10l10-10'%3E%3C/path%3E%3C/svg%3E");
                 background-repeat: repeat;
             }
         </style>
