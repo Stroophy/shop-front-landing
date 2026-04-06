@@ -6,15 +6,8 @@ const { title } = Astro.props;
     <head>
         <meta charset="utf-8" />
         <title>{title} | PI-HUB Web Solutions</title>
-        <style>
-            .graffiti-bg {
-                /* Increased opacity from 0.03 to 0.08 */
-                background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'%3E%3Cpath fill='%23ffffff' fill-opacity='0.08' d='M20 20l10 10m-10 10l10-10m10 20l10 10m-10 10l10-10M60 60l10 10m-10 10l10-10m10 20l10 10m-10 10l10-10M100 100l10 10m-10 10l10-10M140 140l10 10m-10 10l10-10'%3E%3C/path%3E%3C/svg%3E");
-                background-repeat: repeat;
-            }
-        </style>
     </head>
-    <body class="bg-slate-950 text-slate-100 font-sans antialiased graffiti-bg">
+    <body class="antialiased">
         <header class="border-b border-slate-800 p-8">
             <nav class="max-w-7xl mx-auto flex justify-between items-center">
                 <a href="/" class="text-3xl font-black text-white tracking-tighter">PI-HUB</a>

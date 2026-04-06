@@ -1,5 +1,9 @@
 @import "tailwindcss";
-@theme {
-  --color-brand-primary: #2563eb;
-  --color-brand-dark: #020617;
+
+body {
+    background-color: #020617;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'%3E%3Cpath fill='%23ffffff' fill-opacity='0.2' d='M20 20l10 10m-10 10l10-10m10 20l10 10m-10 10l10-10M60 60l10 10m-10 10l10-10m10 20l10 10m-10 10l10-10M100 100l10 10m-10 10l10-10M140 140l10 10m-10 10l10-10'%3E%3C/path%3E%3C/svg%3E");
+    background-repeat: repeat;
+    background-attachment: fixed;
+    color: #f1f5f9;
 }
