@@ -1,0 +1,26 @@
+
+> shop-front-landing@0.0.1 build
+> astro build
+
+03:02:45 [types] Generated 135ms
+03:02:45 [build] output: "static"
+03:02:45 [build] mode: "static"
+03:02:45 [build] directory: /home/ubuntu/.openclaw/workspace/main/shop-front-landing/dist/
+03:02:45 [build] Collecting build info...
+03:02:45 [build] ✓ Completed in 156ms.
+03:02:45 [build] Building static entrypoints...
+03:02:46 [WARN] [vite] "matchHostname", "matchPathname", "matchPort" and "matchProtocol" are imported from external module "@astrojs/internal-helpers/remote" but never used in "node_modules/astro/dist/assets/utils/index.js".
+03:02:46 [vite] ✓ built in 1.25s
+03:02:46 [vite] ✓ built in 10ms
+03:02:46 [build] Rearranging server assets...
+
+ generating static routes 
+03:02:46   ├─ /custom-web-design/index.html (+17ms) 
+03:02:46   ├─ /managed-web-services/index.html (+5ms) 
+03:02:46   ├─ /niche-web-assets/index.html (+5ms) 
+03:02:46   ├─ /index.html (+4ms) 
+03:02:46 ✓ Completed in 53ms.
+
+03:02:46 [build] ✓ Completed in 1.39s.
+03:02:46 [build] 4 page(s) built in 1.55s
+03:02:46 [build] Complete!
