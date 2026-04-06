@@ -1,16 +1,31 @@
 ---
-import '../styles/global.css';
 const { title } = Astro.props;
 ---
-<html lang="en" class="scroll-smooth bg-slate-950 text-slate-100">
-    <head><meta charset="utf-8" /><title>{title} | PI-HUB Web Solutions</title></head>
+<html lang="en" class="scroll-smooth">
+    <head>
+        <meta charset="utf-8" />
+        <title>{title} | PI-HUB Web Solutions</title>
+        <style>
+            body { background-color: #020617; color: #f1f5f9; font-family: sans-serif; }
+            header { border-bottom: 1px solid #1e293b; padding: 2rem; }
+            nav { max-width: 1280px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
+            .nav-link { color: #94a3b8; font-weight: bold; text-decoration: none; }
+            .nav-link:hover { color: #fff; }
+            .btn { background-color: #2563eb; color: #fff; padding: 0.5rem 1.5rem; border-radius: 9999px; font-weight: bold; text-decoration: none; }
+            main { max-width: 1280px; margin: 0 auto; padding: 6rem 1.5rem; }
+            .grid { display: grid; grid-template-columns: repeat(1, minmax(0, 1fr)); gap: 2rem; }
+            @media (min-width: 768px) { .grid { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+            .service-card { background-color: #0f172a; border: 1px solid #334155; padding: 2.5rem; border-radius: 1.5rem; text-decoration: none; color: #f1f5f9; }
+            .service-card:hover { border-color: #64748b; }
+        </style>
+    </head>
     <body>
-        <header class="border-b border-slate-800 p-8">
-            <nav class="max-w-7xl mx-auto flex justify-between items-center">
-                <a href="/" class="text-3xl font-black text-white tracking-tighter">PI-HUB</a>
-                <div class="space-x-8 text-sm font-bold text-slate-400">
-                    <a href="/#services" class="hover:text-white">Services</a>
-                    <a href="/#contact" class="bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700">Get Started</a>
+        <header>
+            <nav>
+                <a href="/" style="font-size: 1.875rem; font-weight: 900; color: #fff; text-decoration: none;">PI-HUB</a>
+                <div style="display: flex; gap: 2rem;">
+                    <a href="/#services" class="nav-link">Services</a>
+                    <a href="/#contact" class="btn">Get Started</a>
                 </div>
             </nav>
         </header>

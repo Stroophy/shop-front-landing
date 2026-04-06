@@ -2,30 +2,24 @@
 import Layout from '../layouts/Layout.astro';
 ---
 <Layout title="Professional Web Solutions">
-    <style is:global>
-        body { background-color: #020617 !important; color: #f1f5f9 !important; }
-        .bg-slate-900 { background-color: #0f172a !important; }
-        .text-slate-950 { color: #020617 !important; }
-        .text-slate-400 { color: #94a3b8 !important; }
-    </style>
-    <main class="max-w-7xl mx-auto px-6 py-24">
-        <section class="text-center mb-32">
-            <h2 class="text-7xl font-extrabold tracking-tighter leading-tight text-white">Professional Digital Infrastructure.</h2>
-            <p class="text-2xl text-slate-400 mt-8 max-w-3xl mx-auto">High-performance web engineering for Local Trades, Professional Consulting, and Automotive services.</p>
+    <main>
+        <section style="text-align: center; margin-bottom: 8rem;">
+            <h2 style="font-size: 4.5rem; font-weight: 800; letter-spacing: -0.05em; line-height: 1.1; color: #fff;">Professional Digital Infrastructure.</h2>
+            <p style="font-size: 1.5rem; color: #94a3b8; margin-top: 2rem; max-width: 800px; margin-left: auto; margin-right: auto;">High-performance web engineering for Local Trades, Professional Consulting, and Automotive services.</p>
         </section>
 
-        <section id="services" class="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <a href="/niche-web-assets" class="bg-slate-900 border border-slate-700 p-10 rounded-3xl hover:border-slate-500 transition">
-                <h3 class="text-2xl font-bold mb-6 text-white">Niche Web Assets</h3>
-                <p class="text-slate-400 text-lg leading-relaxed">Engineered properties for specialized industries.</p>
+        <section id="services" class="grid">
+            <a href="/niche-web-assets" class="service-card">
+                <h3 style="font-size: 1.5rem; font-weight: 700; margin-bottom: 1.5rem;">Niche Web Assets</h3>
+                <p style="color: #94a3b8; font-size: 1.125rem;">Engineered properties for specialized industries.</p>
             </a>
-            <a href="/custom-web-design" class="bg-slate-900 border border-slate-700 p-10 rounded-3xl hover:border-slate-500 transition">
-                <h3 class="text-2xl font-bold mb-6 text-white">Custom Web Design</h3>
-                <p class="text-slate-400 text-lg leading-relaxed">Bespoke brand identities built for high performance.</p>
+            <a href="/custom-web-design" class="service-card">
+                <h3 style="font-size: 1.5rem; font-weight: 700; margin-bottom: 1.5rem;">Custom Web Design</h3>
+                <p style="color: #94a3b8; font-size: 1.125rem;">Bespoke brand identities built for high performance.</p>
             </a>
-            <a href="/managed-web-services" class="bg-slate-900 border border-slate-700 p-10 rounded-3xl hover:border-slate-500 transition">
-                <h3 class="text-2xl font-bold mb-6 text-white">Managed Web Services</h3>
-                <p class="text-slate-400 text-lg leading-relaxed">End-to-end oversight of your digital infrastructure.</p>
+            <a href="/managed-web-services" class="service-card">
+                <h3 style="font-size: 1.5rem; font-weight: 700; margin-bottom: 1.5rem;">Managed Web Services</h3>
+                <p style="color: #94a3b8; font-size: 1.125rem;">End-to-end oversight of your digital infrastructure.</p>
             </a>
         </section>
     </main>
