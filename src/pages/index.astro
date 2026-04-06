@@ -2,20 +2,25 @@
 import Layout from '../layouts/Layout.astro';
 ---
 <Layout title="Professional Web Solutions">
-    <main class="max-w-7xl mx-auto px-6 py-24">
-        <section class="text-center mb-32">
-            <h1 class="text-7xl md:text-8xl font-black tracking-tighter leading-tight bg-gradient-to-b from-white to-slate-400 bg-clip-text text-transparent">Premium Digital Infrastructure.</h1>
-            <p class="text-2xl text-slate-400 mt-8 max-w-3xl mx-auto">High-performance engineering for ambitious businesses.</p>
+    <main>
+        <section style="text-align: center; margin-bottom: 6rem;">
+            <h1 style="font-size: 4rem; font-weight: 900; margin-bottom: 1.5rem; letter-spacing: -2px;">Professional Digital Infrastructure.</h1>
+            <p style="font-size: 1.5rem; color: #94a3b8; max-width: 800px; margin: 0 auto;">High-performance web engineering for Local Trades, Professional Consulting, and Automotive services.</p>
         </section>
 
-        <section id="services" class="grid md:grid-cols-3 gap-8">
-            {['Niche Web Assets', 'Custom Web Design', 'Managed Web Services'].map(service => (
-                <a href={`/${service.toLowerCase().replace(/ /g, '-')}`} class="group relative bg-slate-900 border border-slate-800 rounded-3xl p-10 hover:border-blue-600 transition-all duration-300 overflow-hidden">
-                    <div class="absolute inset-0 bg-blue-600 opacity-0 group-hover:opacity-10 transition duration-300"></div>
-                    <h3 class="text-2xl font-bold mb-4">{service}</h3>
-                    <p class="text-slate-400 text-lg">Click to view service details and design concepts.</p>
-                </a>
-            ))}
-        </section>
+        <div class="grid">
+            <a href="/niche-web-assets" class="tile">
+                <h3>Niche Web Assets</h3>
+                <p>Engineered digital properties designed to dominate local market search and drive high-intent leads.</p>
+            </a>
+            <a href="/custom-web-design" class="tile">
+                <h3>Custom Web Design</h3>
+                <p>Bespoke brand identities and interfaces crafted for professional excellence and authority.</p>
+            </a>
+            <a href="/managed-web-services" class="tile">
+                <h3>Managed Web Services</h3>
+                <p>Comprehensive 24/7 infrastructure oversight, security hardening, and performance management.</p>
+            </a>
+        </div>
     </main>
 </Layout>
